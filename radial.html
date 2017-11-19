@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>isPointInPath</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<canvas width="600" height="400"></canvas>
+<script>
+    var canvas = document.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+
+    ctx.arc(100,100,100,0,Math.PI*2);
+    /*径向渐变*/
+    /*
+    * 1.起始圆的 圆心坐标x
+    * 2.起始圆的 圆心坐标y
+    * 3.起始圆的 圆半径
+    * 4.结束圆的 圆心坐标x
+    * 5.结束圆的 圆心坐标y
+    * 6.结束圆的 圆半径
+    * */
+    var radialGradient = ctx.createRadialGradient(100,100,100,150,150,0);
+    radialGradient.addColorStop(0,'red');
+    radialGradient.addColorStop(1,'yellow');
+    ctx.fillStyle = radialGradient;
+    ctx.fill();
+
+</script>
+</body>
+</html>

@@ -23,8 +23,6 @@
         /*绘制和管道一样大小的路径*/
         this.ctx.rect(this.x,this.topY,this.pipeWidth,this.pipeHeight);
         this.ctx.rect(this.x,this.botY,this.pipeWidth,this.pipeHeight);
-        //this.ctx.stroke();
-
 
         this.x -= this.speed;
         /*衔接*/

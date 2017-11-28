@@ -10,7 +10,6 @@
     }
     Game.prototype.gameStart = function () {
         var that = this;
-        /*必须加载资源*/
         var loadSource = new fb.loadSource();
         loadSource.load(function (imgList) {
             /*完成游戏的开始*/

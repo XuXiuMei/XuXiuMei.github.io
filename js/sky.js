@@ -13,7 +13,6 @@
         this.ctx.drawImage(this.img,this.x,this.y);
         this.x -= this.speed;
         if(this.x < - this.ctx.canvas.width){
-            /*不能直接定位在800位置*/
             this.x += 2 * this.ctx.canvas.width;
         }
     }

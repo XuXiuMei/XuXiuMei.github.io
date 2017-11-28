@@ -1,5 +1,5 @@
 (function (fb) {
-    var Land = function (ctx,landImg,x) {
+    var Land = function (ctx, landImg, x) {
         this.ctx = ctx;
         this.landImg = landImg;
         this.x = x;

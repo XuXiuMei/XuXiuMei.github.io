@@ -30,7 +30,7 @@
             /*初始化陆地*/
             var landImg = imgList['land'];
             for (var i = 0; i < 4; i++) {
-                var land = new fb.Land(that.ctx,landImg,i*landImg.width);
+                var land = new fb.Land(that.ctx, landImg, i*landImg.width);
                 objectList.push(land);
             }
             /*初始化鸟*/
